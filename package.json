@@ -1,0 +1,28 @@
+{
+  "name": "book-backend",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.0.5",
+    "@strapi/plugin-users-permissions": "4.0.5",
+    "@strapi/strapi": "4.0.5",
+    "cross-env": "^7.0.3",
+    "pg": "^8.7.3",
+    "pg-connection-string": "^2.5.0",
+    "serve": "^13.0.2",
+    "sqlite3": "5.0.2"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "28ed30f0-8929-44f7-84ae-543b41acb298"
+  },
+  "engines": {
+    "node": ">=12.x.x <=16.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

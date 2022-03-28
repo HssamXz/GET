@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_faqs_images",
+  "info": {
+    "singularName": "page-faqs-image",
+    "pluralName": "page-faqs-images",
+    "displayName": "pageFaqsImage"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    }
+  }
+}

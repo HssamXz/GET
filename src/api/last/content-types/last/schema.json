@@ -1,0 +1,106 @@
+{
+  "kind": "collectionType",
+  "collectionName": "lasts",
+  "info": {
+    "singularName": "last",
+    "pluralName": "lasts",
+    "displayName": "allplogs",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "contentone": {
+      "type": "richtext",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "new": {
+      "type": "boolean",
+      "default": true
+    },
+    "description": {
+      "type": "richtext",
+      "maxLength": 250,
+      "minLength": 20
+    },
+    "imageAdmin": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "author": {
+      "type": "string"
+    },
+    "timeofread": {
+      "type": "integer"
+    },
+    "firsttag": {
+      "type": "string"
+    },
+    "secondtag": {
+      "type": "string"
+    },
+    "threetag": {
+      "type": "string"
+    },
+    "adsense": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "category": {
+      "type": "string"
+    },
+    "last_plog": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::last-plog.last-plog",
+      "inversedBy": "lasts"
+    },
+    "quentry_canda": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::quentry-canda.quentry-canda",
+      "inversedBy": "allplogs"
+    },
+    "page_tags_all": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page-tags-all.page-tags-all",
+      "inversedBy": "allplogs"
+    },
+    "tagOne": {
+      "type": "string"
+    }
+  }
+}

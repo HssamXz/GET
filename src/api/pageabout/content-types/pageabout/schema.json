@@ -1,0 +1,36 @@
+{
+  "kind": "singleType",
+  "collectionName": "pageabouts",
+  "info": {
+    "singularName": "pageabout",
+    "pluralName": "pageabouts",
+    "displayName": "pageabout",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "cover": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "title": {
+      "type": "string"
+    },
+    "pragraphe": {
+      "type": "richtext"
+    },
+    "abot": {
+      "type": "uid",
+      "targetField": "title"
+    }
+  }
+}

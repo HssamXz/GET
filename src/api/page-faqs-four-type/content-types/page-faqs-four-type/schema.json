@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_faqs_four_types",
+  "info": {
+    "singularName": "page-faqs-four-type",
+    "pluralName": "page-faqs-four-types",
+    "displayName": "pageFaqsFourType"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "reponse": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "authr": {
+      "type": "string"
+    },
+    "toid": {
+      "type": "string"
+    },
+    "myid": {
+      "type": "string"
+    },
+    "page_faqs_tags_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page-faqs-tags-type.page-faqs-tags-type",
+      "inversedBy": "page_faqs_four_types"
+    }
+  }
+}

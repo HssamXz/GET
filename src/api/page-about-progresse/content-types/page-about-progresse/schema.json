@@ -1,0 +1,22 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_about_progresses",
+  "info": {
+    "singularName": "page-about-progresse",
+    "pluralName": "page-about-progresses",
+    "displayName": "pageAboutProgresse"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "value": {
+      "type": "integer",
+      "required": true
+    }
+  }
+}

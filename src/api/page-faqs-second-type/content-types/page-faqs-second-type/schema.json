@@ -1,0 +1,39 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_faqs_second_types",
+  "info": {
+    "singularName": "page-faqs-second-type",
+    "pluralName": "page-faqs-second-types",
+    "displayName": "pageFaqsSecondType"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "reponse": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "myid": {
+      "type": "string"
+    },
+    "toid": {
+      "type": "string"
+    },
+    "authr": {
+      "type": "text"
+    },
+    "page_faqs_tags_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page-faqs-tags-type.page-faqs-tags-type",
+      "inversedBy": "page_faqs_second_types"
+    }
+  }
+}

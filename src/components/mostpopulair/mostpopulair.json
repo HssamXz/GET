@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_mostpopulair_mostpopulairs",
+  "info": {
+    "displayName": "mostpopulair",
+    "icon": "crown"
+  },
+  "options": {},
+  "attributes": {
+    "typeof": {
+      "type": "string",
+      "required": true,
+      "unique": true
+    }
+  }
+}

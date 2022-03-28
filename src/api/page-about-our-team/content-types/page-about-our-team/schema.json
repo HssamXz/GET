@@ -1,0 +1,51 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_about_our_teams",
+  "info": {
+    "singularName": "page-about-our-team",
+    "pluralName": "page-about-our-teams",
+    "displayName": "pageAboutOurTeam"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "join": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "name": {
+      "type": "string"
+    },
+    "jobs": {
+      "type": "string"
+    },
+    "onestart": {
+      "type": "text"
+    },
+    "twostar": {
+      "type": "text"
+    },
+    "threestar": {
+      "type": "text"
+    },
+    "fourstar": {
+      "type": "text"
+    },
+    "fivestar": {
+      "type": "text"
+    }
+  }
+}

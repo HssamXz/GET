@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "all_offer_tourismes",
+  "info": {
+    "singularName": "all-offer-tourisme",
+    "pluralName": "all-offer-tourismes",
+    "displayName": "allOfferTourisme"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titleJob": {
+      "type": "text"
+    },
+    "titleEntrprise": {
+      "type": "text"
+    },
+    "tagOne": {
+      "type": "string"
+    },
+    "tagTwo": {
+      "type": "string"
+    },
+    "quentry": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "contentone": {
+      "type": "richtext"
+    },
+    "logo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "adsenseOne": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "adsTwo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "presentationEntrprise": {
+      "type": "richtext"
+    },
+    "dateRead": {
+      "type": "integer"
+    },
+    "page_tags_all": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page-tags-all.page-tags-all",
+      "inversedBy": "all_offer_tourismes"
+    }
+  }
+}

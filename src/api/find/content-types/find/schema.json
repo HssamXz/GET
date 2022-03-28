@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "finds",
+  "info": {
+    "singularName": "find",
+    "pluralName": "finds",
+    "displayName": "find",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "name": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext",
+      "maxLength": 100
+    },
+    "email": {
+      "type": "email"
+    },
+    "etudicart_masters": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::etudicart.etudicart",
+      "mappedBy": "finds"
+    },
+    "etuidcart_licences": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::etuidcart.etuidcart",
+      "mappedBy": "finds"
+    }
+  }
+}

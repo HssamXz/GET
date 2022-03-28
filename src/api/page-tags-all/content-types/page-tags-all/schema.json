@@ -1,0 +1,84 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_tags_alls",
+  "info": {
+    "singularName": "page-tags-all",
+    "pluralName": "page-tags-alls",
+    "displayName": "pageTagsAll"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "allplogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::last.last",
+      "mappedBy": "page_tags_all"
+    },
+    "etudicart_masters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::etudicart.etudicart",
+      "mappedBy": "page_tags_all"
+    },
+    "etuidcart_licences": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::etuidcart.etuidcart",
+      "mappedBy": "page_tags_all"
+    },
+    "etuidscart_phds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::etuidscart.etuidscart",
+      "mappedBy": "page_tags_all"
+    },
+    "jobsinfmationtwos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::jobsinfmationtwo.jobsinfmationtwo",
+      "mappedBy": "page_tags_all"
+    },
+    "jobsinformations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::jobsinformation.jobsinformation",
+      "mappedBy": "page_tags_all"
+    },
+    "jobsofers": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::jobsofer.jobsofer",
+      "mappedBy": "page_tags_all"
+    },
+    "tourismeinformations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tourismeinformation.tourismeinformation",
+      "mappedBy": "page_tags_all"
+    },
+    "tourismeinformationtwos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tourismeinformationtwo.tourismeinformationtwo",
+      "mappedBy": "page_tags_all"
+    },
+    "etuidacarts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::etuidacart.etuidacart",
+      "mappedBy": "page_tags_all"
+    },
+    "all_offer_tourismes": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::all-offer-tourisme.all-offer-tourisme",
+      "mappedBy": "page_tags_all"
+    }
+  }
+}

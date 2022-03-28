@@ -1,0 +1,67 @@
+{
+  "kind": "collectionType",
+  "collectionName": "quentry_candas",
+  "info": {
+    "singularName": "quentry-canda",
+    "pluralName": "quentry-candas",
+    "displayName": "quentryCanda",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "etuidcart_licences": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::etuidcart.etuidcart",
+      "mappedBy": "quentry_canda"
+    },
+    "name": {
+      "type": "string"
+    },
+    "etudicart_masters": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::etudicart.etudicart",
+      "mappedBy": "quentry_canda"
+    },
+    "etuidscart_phds": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::etuidscart.etuidscart",
+      "mappedBy": "quentry_canda"
+    },
+    "jobsinformations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::jobsinformation.jobsinformation",
+      "mappedBy": "quentry_canda"
+    },
+    "jobsinfmationtwos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::jobsinfmationtwo.jobsinfmationtwo",
+      "mappedBy": "quentry_canda"
+    },
+    "allplogs": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::last.last",
+      "mappedBy": "quentry_canda"
+    },
+    "tourismeinformations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tourismeinformation.tourismeinformation",
+      "mappedBy": "quentry_canda"
+    },
+    "tourismeinformationtwos": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::tourismeinformationtwo.tourismeinformationtwo",
+      "mappedBy": "quentry_canda"
+    }
+  }
+}

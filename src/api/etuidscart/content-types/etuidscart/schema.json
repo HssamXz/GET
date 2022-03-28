@@ -1,0 +1,95 @@
+{
+  "kind": "collectionType",
+  "collectionName": "etuidscarts",
+  "info": {
+    "singularName": "etuidscart",
+    "pluralName": "etuidscarts",
+    "displayName": "etuidscart(phd)",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "date": {
+      "type": "date"
+    },
+    "quentry": {
+      "type": "string"
+    },
+    "imageAdmin": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "dateRead": {
+      "type": "integer"
+    },
+    "author": {
+      "type": "text"
+    },
+    "contentone": {
+      "type": "richtext"
+    },
+    "adsenseOne": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "adsTwo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "tagOne": {
+      "type": "text"
+    },
+    "tagTwo": {
+      "type": "text"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "quentry_canda": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::quentry-canda.quentry-canda",
+      "inversedBy": "etuidscart_phds"
+    },
+    "page_tags_all": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page-tags-all.page-tags-all",
+      "inversedBy": "etuidscart_phds"
+    }
+  }
+}

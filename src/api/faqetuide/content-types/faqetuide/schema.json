@@ -1,0 +1,23 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faqetuides",
+  "info": {
+    "singularName": "faqetuide",
+    "pluralName": "faqetuides",
+    "displayName": "faqetuide"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "richtext",
+      "required": true
+    },
+    "reponse": {
+      "type": "richtext",
+      "required": true
+    }
+  }
+}

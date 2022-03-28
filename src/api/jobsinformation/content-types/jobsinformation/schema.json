@@ -1,0 +1,87 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobsinformations",
+  "info": {
+    "singularName": "jobsinformation",
+    "pluralName": "jobsinformations",
+    "displayName": "jobsinformation"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "cover": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "admin": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "dateRead": {
+      "type": "integer"
+    },
+    "adsenseOne": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "adsTwo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "tagOne": {
+      "type": "text"
+    },
+    "tagTwo": {
+      "type": "text"
+    },
+    "quentry_canda": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::quentry-canda.quentry-canda",
+      "inversedBy": "jobsinformations"
+    },
+    "page_tags_all": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page-tags-all.page-tags-all",
+      "inversedBy": "jobsinformations"
+    }
+  }
+}

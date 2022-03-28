@@ -1,0 +1,27 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sociale_medias",
+  "info": {
+    "singularName": "sociale-media",
+    "pluralName": "sociale-medias",
+    "displayName": "socialeMedia"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "font": {
+      "type": "text"
+    },
+    "color": {
+      "type": "text"
+    },
+    "background": {
+      "type": "text"
+    }
+  }
+}

@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "faqtourismes",
+  "info": {
+    "singularName": "faqtourisme",
+    "pluralName": "faqtourismes",
+    "displayName": "faqtourisme"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "richtext"
+    },
+    "reponse": {
+      "type": "richtext"
+    }
+  }
+}

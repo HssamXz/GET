@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_faqs_questions",
+  "info": {
+    "singularName": "page-faqs-question",
+    "pluralName": "page-faqs-questions",
+    "displayName": "pageFaqsQuestion",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "text"
+    },
+    "email": {
+      "type": "email"
+    },
+    "question": {
+      "type": "richtext"
+    },
+    "reponse": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "tagOne": {
+      "type": "string"
+    },
+    "tagTwo": {
+      "type": "string"
+    },
+    "check": {
+      "type": "boolean"
+    },
+    "cheks": {
+      "type": "string"
+    }
+  }
+}

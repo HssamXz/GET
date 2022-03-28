@@ -1,0 +1,21 @@
+{
+  "kind": "collectionType",
+  "collectionName": "last_plogs",
+  "info": {
+    "singularName": "last-plog",
+    "pluralName": "last-plogs",
+    "displayName": "lastPlog"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "lasts": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::last.last",
+      "mappedBy": "last_plog"
+    }
+  }
+}

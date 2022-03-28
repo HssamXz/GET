@@ -1,0 +1,110 @@
+{
+  "kind": "collectionType",
+  "collectionName": "jobsofers",
+  "info": {
+    "singularName": "jobsofer",
+    "pluralName": "jobsofers",
+    "displayName": "jobsofer",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titleJob": {
+      "type": "text"
+    },
+    "titleEntrprise": {
+      "type": "text"
+    },
+    "tagOne": {
+      "type": "string"
+    },
+    "tagTwo": {
+      "type": "string"
+    },
+    "quentry": {
+      "type": "text"
+    },
+    "date": {
+      "type": "date"
+    },
+    "contentone": {
+      "type": "richtext"
+    },
+    "emploiDeatails": {
+      "type": "string"
+    },
+    "postD": {
+      "type": "integer"
+    },
+    "price": {
+      "type": "integer"
+    },
+    "typeofJob": {
+      "type": "string"
+    },
+    "exprience": {
+      "type": "integer"
+    },
+    "education": {
+      "type": "text"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "logo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "adsenseOne": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "adsTwo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "author": {
+      "type": "string"
+    },
+    "dateRead": {
+      "type": "integer"
+    },
+    "presentationEntrprise": {
+      "type": "richtext"
+    },
+    "page_tags_all": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page-tags-all.page-tags-all",
+      "inversedBy": "jobsofers"
+    }
+  }
+}

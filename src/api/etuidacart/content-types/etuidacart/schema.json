@@ -1,0 +1,89 @@
+{
+  "kind": "collectionType",
+  "collectionName": "etuidacarts",
+  "info": {
+    "singularName": "etuidacart",
+    "pluralName": "etuidacarts",
+    "displayName": "etuidacart(volunteer)",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text"
+    },
+    "date": {
+      "type": "date"
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "tagOne": {
+      "type": "string"
+    },
+    "tagTwo": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "dateRead": {
+      "type": "string"
+    },
+    "contentone": {
+      "type": "richtext"
+    },
+    "adsenseOne": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "adsTwo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "imageAdmin": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "page_tags_all": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page-tags-all.page-tags-all",
+      "inversedBy": "etuidacarts"
+    },
+    "quentry": {
+      "type": "string"
+    }
+  }
+}

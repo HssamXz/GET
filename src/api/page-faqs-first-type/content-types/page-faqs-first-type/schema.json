@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_faqs_first_types",
+  "info": {
+    "singularName": "page-faqs-first-type",
+    "pluralName": "page-faqs-first-types",
+    "displayName": "pageFaqsFirstType",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "qst": {
+      "type": "text"
+    },
+    "reponse": {
+      "type": "richtext"
+    },
+    "myid": {
+      "type": "string"
+    },
+    "page_faqs_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page-faqs-type.page-faqs-type",
+      "inversedBy": "page_faqs_first_type"
+    },
+    "toid": {
+      "type": "string"
+    },
+    "authr": {
+      "type": "string"
+    },
+    "date": {
+      "type": "date"
+    },
+    "page_faqs_tags_type": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page-faqs-tags-type.page-faqs-tags-type",
+      "inversedBy": "page_faqs_first_types"
+    }
+  }
+}

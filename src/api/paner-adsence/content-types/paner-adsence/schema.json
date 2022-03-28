@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "paner_adsences",
+  "info": {
+    "singularName": "paner-adsence",
+    "pluralName": "paner-adsences",
+    "displayName": "panerAdsence"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "paner": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    }
+  }
+}

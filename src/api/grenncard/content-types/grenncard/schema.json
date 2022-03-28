@@ -1,0 +1,73 @@
+{
+  "kind": "collectionType",
+  "collectionName": "grenncards",
+  "info": {
+    "singularName": "grenncard",
+    "pluralName": "grenncards",
+    "displayName": "sectionGrennCard",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "imageAdmin": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "dateRead": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "contentone": {
+      "type": "richtext"
+    },
+    "adsense": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "category": {
+      "type": "string"
+    },
+    "tagOne": {
+      "type": "string"
+    },
+    "tagTwo": {
+      "type": "string"
+    }
+  }
+}

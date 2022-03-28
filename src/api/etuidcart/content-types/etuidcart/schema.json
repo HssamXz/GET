@@ -1,0 +1,105 @@
+{
+  "kind": "collectionType",
+  "collectionName": "etuidcarts",
+  "info": {
+    "singularName": "etuidcart",
+    "pluralName": "etuidcarts",
+    "displayName": "etuidcart (licence)",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files"
+      ]
+    },
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "date": {
+      "type": "date",
+      "required": true
+    },
+    "quentry": {
+      "type": "string"
+    },
+    "finds": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::find.find",
+      "inversedBy": "etuidcart_licences"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "tagOne": {
+      "type": "string"
+    },
+    "tagTwo": {
+      "type": "string"
+    },
+    "dateRead": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "contentone": {
+      "type": "richtext"
+    },
+    "adsenseOne": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "adsTwo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "category": {
+      "type": "string"
+    },
+    "imageAdmin": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "quentry_canda": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::quentry-canda.quentry-canda",
+      "inversedBy": "etuidcart_licences"
+    },
+    "page_tags_all": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page-tags-all.page-tags-all",
+      "inversedBy": "etuidcart_licences"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tendences",
+  "info": {
+    "singularName": "tendence",
+    "pluralName": "tendences",
+    "displayName": "tendence"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "firststend": {
+      "type": "string"
+    },
+    "secondtend": {
+      "type": "string"
+    },
+    "threetend": {
+      "type": "string"
+    },
+    "fourtend": {
+      "type": "string"
+    },
+    "fivetend": {
+      "type": "string"
+    },
+    "sixtend": {
+      "type": "string"
+    },
+    "seventend": {
+      "type": "string"
+    }
+  }
+}

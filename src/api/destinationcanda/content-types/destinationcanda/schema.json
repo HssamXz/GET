@@ -1,0 +1,76 @@
+{
+  "kind": "collectionType",
+  "collectionName": "destinationcandas",
+  "info": {
+    "singularName": "destinationcanda",
+    "pluralName": "destinationcandas",
+    "displayName": "sectionDestinationCanda",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "title": {
+      "type": "text"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "source": {
+      "type": "string"
+    },
+    "imageAdmin": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "dateRead": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "contentone": {
+      "type": "richtext"
+    },
+    "adsense": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "category": {
+      "type": "string"
+    },
+    "tagTwo": {
+      "type": "string"
+    },
+    "tagOne": {
+      "type": "string"
+    }
+  }
+}

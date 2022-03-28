@@ -1,0 +1,46 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_faqs_tags_types",
+  "info": {
+    "singularName": "page-faqs-tags-type",
+    "pluralName": "page-faqs-tags-types",
+    "displayName": "pageFaqsTagsType",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "path": {
+      "type": "text"
+    },
+    "page_faqs_first_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page-faqs-first-type.page-faqs-first-type",
+      "mappedBy": "page_faqs_tags_type"
+    },
+    "page_faqs_second_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page-faqs-second-type.page-faqs-second-type",
+      "mappedBy": "page_faqs_tags_type"
+    },
+    "page_faqs_three_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page-faqs-three-type.page-faqs-three-type",
+      "mappedBy": "page_faqs_tags_type"
+    },
+    "page_faqs_four_types": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page-faqs-four-type.page-faqs-four-type",
+      "mappedBy": "page_faqs_tags_type"
+    }
+  }
+}

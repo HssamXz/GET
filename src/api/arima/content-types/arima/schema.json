@@ -1,0 +1,80 @@
+{
+  "kind": "collectionType",
+  "collectionName": "arimas",
+  "info": {
+    "singularName": "arima",
+    "pluralName": "arimas",
+    "displayName": "sectionArrima",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "date": {
+      "type": "date"
+    },
+    "source": {
+      "type": "string"
+    },
+    "imageAdmin": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "dateRead": {
+      "type": "string"
+    },
+    "author": {
+      "type": "string"
+    },
+    "contentone": {
+      "type": "richtext"
+    },
+    "adsense": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "category": {
+      "type": "string"
+    },
+    "tagOne": {
+      "type": "string"
+    },
+    "tagTwo": {
+      "type": "string"
+    }
+  }
+}

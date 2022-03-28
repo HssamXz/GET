@@ -1,0 +1,92 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tourismeinformations",
+  "info": {
+    "singularName": "tourismeinformation",
+    "pluralName": "tourismeinformations",
+    "displayName": "tourismeinformation",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "content": {
+      "type": "richtext"
+    },
+    "dateRead": {
+      "type": "integer"
+    },
+    "author": {
+      "type": "string"
+    },
+    "cover": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "admin": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "tagOne": {
+      "type": "string"
+    },
+    "tagTwo": {
+      "type": "string"
+    },
+    "allplogs": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::last.last"
+    },
+    "adsenseOne": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "adsTwo": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ],
+      "type": "media",
+      "multiple": true
+    },
+    "quentry_canda": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::quentry-canda.quentry-canda",
+      "inversedBy": "tourismeinformations"
+    },
+    "page_tags_all": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page-tags-all.page-tags-all",
+      "inversedBy": "tourismeinformations"
+    }
+  }
+}

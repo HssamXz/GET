@@ -1,0 +1,104 @@
+{
+  "kind": "collectionType",
+  "collectionName": "etudicarts",
+  "info": {
+    "singularName": "etudicart",
+    "pluralName": "etudicarts",
+    "displayName": "etudicart(master)",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "text",
+      "required": true
+    },
+    "image": {
+      "type": "media",
+      "multiple": true,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "date": {
+      "required": true,
+      "type": "date"
+    },
+    "quentry": {
+      "type": "string",
+      "required": true
+    },
+    "finds": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::find.find",
+      "inversedBy": "etudicart_masters"
+    },
+    "imageAdmin": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "dateRead": {
+      "type": "integer"
+    },
+    "author": {
+      "type": "string"
+    },
+    "contentone": {
+      "type": "richtext"
+    },
+    "adsenseOne": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "adsTwo": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos"
+      ]
+    },
+    "tagOne": {
+      "type": "string"
+    },
+    "tagTwo": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "quentry_canda": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::quentry-canda.quentry-canda",
+      "inversedBy": "etudicart_masters"
+    },
+    "page_tags_all": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::page-tags-all.page-tags-all",
+      "inversedBy": "etudicart_masters"
+    }
+  }
+}

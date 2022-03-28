@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "page_faqs_types",
+  "info": {
+    "singularName": "page-faqs-type",
+    "pluralName": "page-faqs-types",
+    "displayName": "pageFaqsType"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "typeone": {
+      "type": "text"
+    },
+    "typetwo": {
+      "type": "string"
+    },
+    "typethree": {
+      "type": "string"
+    },
+    "typefour": {
+      "type": "string"
+    },
+    "typefive": {
+      "type": "string"
+    },
+    "page_faqs_first_type": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::page-faqs-first-type.page-faqs-first-type",
+      "mappedBy": "page_faqs_type"
+    }
+  }
+}
